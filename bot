@@ -1,0 +1,22 @@
+// Initialize Discord API and bot
+
+// Set up event listener for message events
+onMessageReceived(message) {
+    // Check if message meets moderation criteria
+    if (message contains inappropriate language) {
+        // Delete message
+        deleteMessage(message);
+    }
+}
+
+// Set up event listener for user join events
+onUserJoin(user) {
+    // Send welcome message to user
+    sendMessage(user, "Welcome to the server!");
+}
+
+// Set up event listener for user leave events
+onUserLeave(user) {
+    // Send farewell message to user
+    sendMessage(user, "Thank you for visiting the server. We hope to see you again soon!");
+}
